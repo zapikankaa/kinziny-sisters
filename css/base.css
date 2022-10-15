@@ -1,0 +1,267 @@
+@import url('./fonts.css');
+@import url('./reset.css');
+
+.page {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1308px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 30px;
+  position: relative;
+}
+
+.fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.logo {
+  font-family: 'Circe', sans-serif;
+  font-weight: 700;
+  cursor: context-menu;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 80px;
+  color: #1e1e1e;
+}
+
+.text {
+  font-family: 'Circe', sans-serif;
+  font-weight: 350;
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #379ADD;
+  color: white;
+  font-family: 'Gilroy', sans-serif;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+.pic1, .pic1_mob, .pic2, .pic3, .pic4 {
+  background: no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  z-index: -1;
+}
+
+.pic1 {
+  background-image: url('../img/pic1.png');
+  aspect-ratio: 0.9;
+}
+
+.pic1_mob {
+    background-image: url('../img/pic1_mob.png');
+    aspect-ratio: 0.86;
+}
+
+.pic2 {
+  background-image: url('../img/pic2.png');
+  aspect-ratio: 0.78;
+}
+
+.pic3 {
+  background-image: url('../img/pic3.png');
+  aspect-ratio: 0.93;
+  width: 319px;
+}
+
+.pic4 {
+  background-image: url('../img/pic4.png');
+  aspect-ratio: 0.93;
+  width: 319px;
+}
+
+
+/* Header start */
+.header {
+  height: 150px;
+  padding-top: 55px;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0));
+}
+
+.header-content {
+  display: flex;
+  color: #2d2d2d;
+}
+
+.burger {
+  width: 25px;
+  height: 16px;
+  position: relative;
+  display: none;
+  margin-right: 15px;
+}
+
+.burger__checkbox {
+  display: none;
+}
+
+.burger__line {
+  position: absolute;
+  background-color: black;
+  width: 25px;
+  height: 1px;
+  left: 0;
+  top: 0;
+  transition: all .5s;
+}
+
+.burger__line:nth-of-type(2) {
+  width: 20px;
+  top: 8px;
+}
+
+.burger__line:nth-of-type(3) {
+  top: 16px;
+}
+
+.burger__checkbox:checked + .burger .burger__line {
+  transform: rotate(45deg);
+  top: 0;
+  transition: all .5s;
+}
+
+.burger__checkbox:checked + .burger .burger__line:nth-of-type(2) {
+  left: 3px;
+}
+
+.burger__checkbox:checked + .burger .burger__line:nth-of-type(3) {
+  transform: rotate(135deg);
+}
+
+.burger__checkbox:checked ~ .header-menu {
+  opacity: 1;
+  height: auto;
+  transition: all .5s;
+}
+
+.burger__checkbox:checked ~ .header-menu .header-menu__item {
+  opacity: 1;
+  height: auto;
+  transition: all .5s;
+}
+
+.header__logo {
+  font-size: 36px;
+  line-height: 40px;
+  margin-right: 73px;
+}
+
+.header-menu {
+  display: flex;
+}
+
+.header-menu__item {
+  font-family: 'Circe', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 40px;
+  margin-right: 34px;
+  color: #2d2d2d;
+}
+
+.header-menu__item:last-of-type {
+  margin-right: 0;
+}
+/* Header end */
+
+
+
+
+
+
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .page {
+    zoom: 0.8;
+  }
+}
+
+@media (max-width: 1136px) {
+ .header {
+    padding-top: 35px;
+    height: 130px;
+  }
+
+  .header-content {
+    align-items: baseline;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .header__logo {
+    font-size: 20px;
+    line-height: 40px;
+    margin-right: 0;
+  }
+
+  .header-menu {
+    height: 1px;
+    opacity: 0;
+    flex-direction: column;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.95) 10%, rgba(255, 255, 255, 0.95) 90%, rgba(255, 255, 255, 0));
+    width: 100%;
+    transition: all 1s;
+    position: absolute;
+    top: 80px;
+    padding: 15px 0;
+    transition: all .5s;
+  }
+
+  .header-menu__item {
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 32px;
+    height: 1px;
+    opacity: 0;
+    transition: all .5s;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .pic3, .pic4 {
+    width: 118px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
