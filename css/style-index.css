@@ -3,7 +3,7 @@
 /* First screen start */
 .first-screen {
   position: relative;
-  padding-top: 240px;
+  padding-top: 55px;
   padding-bottom: 270px;
   /* height: 100vh; */
 }
@@ -402,7 +402,7 @@
 
   .first-screen {
     height: auto;
-    padding: 134px 0 280px;
+    padding-bottom: 280px;
     overflow: hidden;
   }
 

@@ -1,0 +1,74 @@
+@import url('./base.css');
+
+.blog {
+
+}
+
+.blog .content {
+  padding-bottom: 61px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.blog .text {
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.blog .button_link {
+  height: 80px;
+  padding: 0 25px;
+  width: fit-content;
+  margin-bottom: 15px;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.blog .dark-block {
+  padding: 53px 175px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.blog .dark-block .text {
+  width: 100%;
+}
+
+.blog__results {
+  height: 112px;
+  width: 386px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+
+
+
+
+@media (max-width: 767px) {
+  .blog .content {
+    padding-bottom: 35px;
+  }
+
+  .blog .text {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .blog .button_link {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .blog .dark-block {
+    padding: 25px 35px;
+    margin-bottom: 15px;
+  }
+
+  .blog__results {
+    height: 80px;
+  }
+
+}

@@ -1,0 +1,193 @@
+@import url('./base.css');
+
+.lyme .text {
+  line-height: 40px;
+}
+
+.lyme-intro {
+  padding-bottom: 74px;
+}
+
+.lyme-intro__intro .text {
+  margin-bottom: 30px;
+  margin-right: 80px;
+}
+
+.lyme-intro .dark-block {
+  padding: 37px 175px;
+}
+
+.lyme-intro .dark-block .text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.lyme-intro .dark-block .text:last-of-type {
+  margin-bottom: 0;
+}
+
+.lyme-intro .link {
+  color: white;
+  text-decoration: underline;
+}
+
+.lyme-phases {
+  padding: 100px 0 18px;
+}
+
+.lyme-phases .page-title {
+  margin-bottom: 42px;
+}
+
+.phases-block {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.phases-block__item {
+  font-family: 'Circe', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  position: relative;
+  padding-left: 56px;
+}
+
+.phases-block__item::before {
+  content: '';
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  position: absolute;
+  background: no-repeat center center url('../img/check.svg');
+  background-size: contain;
+  left: 0;
+  top: 0;
+}
+
+.lyme-phases__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lyme-phases__info .text {
+  width: 44%;
+  margin-bottom: 20px;
+}
+
+.lyme-phases__info > .text {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.lyme-opinions {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.lyme-opinions .page-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.lyme-opinions__intro {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.lyme-opinions ol, .lyme-opinions ul {
+  width: 47%;
+}
+
+
+@media (max-width: 767px) {
+  .lyme .text {
+    line-height: 20px;
+  }
+
+  .lyme-intro {
+    padding-bottom: 32px;
+  }
+
+  .lyme-intro__intro .text {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
+  .lyme-intro .text:last-of-type {
+    margin-bottom: 33px;
+  }
+
+  .lyme-intro .dark-block {
+    padding: 25px 35px;
+  }
+
+  .lyme-intro .dark-block .text {
+    margin-bottom: 10px;
+  }
+
+  .lyme-phases {
+    padding: 35px 0 27px;
+  }
+
+  .lyme-phases .page-title  {
+    margin-bottom: 15px;
+  }
+
+  .phases-block {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .phases-block__item {
+    padding-left: 28px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .phases-block__item::before {
+    width: 22px;
+    height: 22px;
+  }
+
+  .lyme-phases__info {
+    flex-direction: column;
+  }
+
+  .lyme-phases__info .text {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .lyme-opinions {
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+
+  .lyme-opinions .page-title {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .lyme-opinions__intro {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  .lyme-opinions ol, .lyme-opinions ul {
+    width: 100%;
+  }
+
+  .lyme-opinions ol {
+    margin-bottom: 15px;
+  }
+
+  .lyme-opinions li {
+    margin-bottom: 5px;
+  }
+
+}

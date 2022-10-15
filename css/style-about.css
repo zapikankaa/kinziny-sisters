@@ -1,0 +1,162 @@
+@import url('./base.css');
+
+.about {
+  padding-bottom: 164px;
+}
+
+.sister {
+  margin-bottom: 59px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sister .page-title {
+  font-size: 70px;
+  line-height: 80px;
+  margin-bottom: 15px;
+}
+
+.sister__info {
+  width: 55%;
+}
+
+.sister__info .text {
+  margin-bottom: 30px;
+}
+
+.sister__photo {
+  aspect-ratio: 1.18;
+  width: 40%;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: fit-content;
+}
+
+.sister__photo .decor {
+  position: absolute;
+  z-index: -1;
+  background: no-repeat center center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.sister_first .sister__photo .decor_1 {
+  width: 47%;
+  right: -22%;
+  bottom: 9%;
+  aspect-ratio: 1.14;
+  background-image: url('../img/s1p1.jpg');
+}
+
+.sister_first .sister__photo .decor_2 {
+  width: 47%;
+  right: -44%;
+  bottom: -13%;
+  aspect-ratio: 1.44;
+  background-image: url('../img/s1p2.jpg');
+}
+
+.sister_first .sister__photo .decor_3 {
+  width: 22%;
+  right: -4%;
+  bottom: -17%;
+  aspect-ratio: 1.44;
+  background-image: url('../img/s1p3.jpg');
+}
+
+.sister_second .sister__photo {
+  order: -1;
+}
+
+.sister_second .sister__photo .decor_1 {
+  width: 22%;
+  left: -14%;
+  bottom: 52%;
+  aspect-ratio: 1.44;
+  background-image: url('../img/s2p1.jpg');
+}
+
+.sister_second .sister__photo .decor_2 {
+  width: 47%;
+  left: -39%;
+  bottom: 4%;
+  aspect-ratio: 1.14;
+  background-image: url('../img/s2p2.jpg');
+}
+
+.sister_second .sister__photo .decor_3 {
+  width: 47%;
+  left: -17%;
+  bottom: -18%;
+  aspect-ratio: 1.44;
+  background-image: url('../img/s2p3.jpg');
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+  .about {
+    padding-bottom: 71px;
+  }
+
+  .sister {
+    flex-direction: column;
+  }
+
+  .sister .page-title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .sister__info {
+    width: 100%;
+  }
+
+  .sister__info .text {
+    margin-bottom: 20px;
+  }
+
+  .sister__photo {
+    width: 80%;
+    margin-right: 7%;
+    align-self: flex-end;
+  }
+
+  .sister_first .sister__photo .decor_1 {
+    right: -15%;
+  }
+
+  .sister_first .sister__photo .decor_2 {
+    bottom: -7%;
+  }
+
+  .sister_first .sister__photo .decor_3 {
+    bottom: -13%;
+  }
+
+  .sister_second .sister__photo .decor_1 {
+    bottom: 40%;
+  }
+
+  .sister_second .sister__photo .decor_1 {
+    bottom: -5%;
+    left: -28%;
+  }
+
+  .sister_second .sister__photo .decor_1 {
+    bottom: -13%;
+    left: -9%;
+  }
+
+  .sister_second .sister__photo {
+    order: initial;
+  }
+}
