@@ -109,6 +109,7 @@
   background-image: url('../img/pic0.jpg');
   aspect-ratio: 0.93;
   width: 319px;
+  z-index: -2;
 }
 
 .pic1 {
