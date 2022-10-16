@@ -6,16 +6,6 @@
   position: relative;
 }
 
-.courses .pic3_1 {
-  left: -144px;
-  top: 260px;
-}
-
-.courses .pic3_2 {
-  top: 590px;
-  right: -86px;
-}
-
 .courses-list {
   display: flex;
   flex-wrap: wrap;

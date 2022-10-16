@@ -1,5 +1,24 @@
 @import url('./base.css');
 
+.lyme {
+  position: relative;
+}
+
+.pic0.pic0_3 {
+  right: 0;
+  top: 272px;
+}
+
+.pic0.pic0_4 {
+  left: -34px;
+  top: 406px;
+}
+
+.pic0.pic0_5 {
+  left: 61px;
+  top: 29px;
+}
+
 .lyme .text {
   line-height: 40px;
 }
@@ -33,6 +52,7 @@
 
 .lyme-phases {
   padding: 100px 0 18px;
+  position: relative;
 }
 
 .lyme-phases .page-title {
@@ -83,6 +103,7 @@
 .lyme-opinions {
   padding-top: 100px;
   padding-bottom: 50px;
+  position: relative;
 }
 
 .lyme-opinions .page-title {
@@ -103,6 +124,21 @@
 
 
 @media (max-width: 767px) {
+  .pic0.pic0_3 {
+    right: -41px;
+    top: 64px;
+  }
+
+  .pic0.pic0_4 {
+    display: none;
+  }
+
+  .pic0.pic0_5 {
+    left: auto;
+    right: -41px;
+    top: 64px;
+  }
+
   .lyme .text {
     line-height: 20px;
   }

@@ -2,6 +2,7 @@
 
 .about {
   padding-bottom: 164px;
+  position: relative;
 }
 
 .sister {
@@ -88,6 +89,11 @@
   background-image: url('../img/s2p2.jpg');
 }
 
+.pic0.pic0_3 {
+  left: 11%;
+  bottom: -47%;
+}
+
 .sister_second .sister__photo .decor_3 {
   width: 47%;
   left: -17%;
@@ -104,6 +110,10 @@
 @media (max-width: 767px) {
   .about {
     padding-bottom: 71px;
+  }
+
+  .pic0.pic0_3 {
+    display: none;
   }
 
   .sister {
