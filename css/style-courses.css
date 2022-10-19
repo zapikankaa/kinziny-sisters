@@ -79,13 +79,6 @@
   width: 315px;
   height: 80px;
 }
-
-.courses__button_mob {
-  width: 180px;
-  height: 56px;
-  margin: 0 auto;
-  display: none;
-}
 /* Courses end */
 
 
@@ -155,6 +148,13 @@
 
   .course-card__price {
     margin-bottom: 20px;
+  }
+
+  .course-card__button {
+    width: 180px;
+    height: 56px;
+    font-size: 12px;
+    line-height: 20px;
   }
 
 }

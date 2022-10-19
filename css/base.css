@@ -4,6 +4,7 @@
 .page {
   overflow: hidden;
   padding-top: 185px;
+  position: relative;
 }
 
 .container {
@@ -155,7 +156,7 @@
 .header {
   height: 150px;
   padding-top: 55px;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0));
+  background: white;
 }
 
 .header-content {
@@ -165,9 +166,10 @@
 
 .burger {
   width: 25px;
-  height: 16px;
+  height: 25px;
   position: relative;
   display: none;
+  margin-top: 6px;
   margin-right: 15px;
 }
 
@@ -196,21 +198,24 @@
 
 .burger__checkbox:checked + .burger .burger__line {
   transform: rotate(45deg);
-  top: 0;
+  top: 6px;
   transition: all .5s;
 }
 
 .burger__checkbox:checked + .burger .burger__line:nth-of-type(2) {
   left: 3px;
+  top: 6px;
 }
 
 .burger__checkbox:checked + .burger .burger__line:nth-of-type(3) {
   transform: rotate(135deg);
+  top: 6px;
 }
 
 .burger__checkbox:checked ~ .header-menu {
   opacity: 1;
   height: auto;
+  box-shadow: 0 5px 5px 1px rgb(0 0 0 / 10%);
   transition: all .5s;
 }
 
@@ -329,11 +334,11 @@
 
   .header {
     padding-top: 35px;
-    height: 130px;
+    height: 90px;
   }
 
   .header-content {
-    align-items: baseline;
+    align-items: center;
   }
 
   .burger {
@@ -350,7 +355,7 @@
     height: 1px;
     opacity: 0;
     flex-direction: column;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.95) 10%, rgba(255, 255, 255, 0.95) 90%, rgba(255, 255, 255, 0));
+    background: white;
     width: 100%;
     transition: all 1s;
     position: absolute;

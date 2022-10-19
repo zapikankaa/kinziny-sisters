@@ -39,6 +39,7 @@
 .blog__results {
   height: 112px;
   width: 386px;
+  font-size: 22px;
   margin: 0 auto;
   max-width: 100%;
 }
@@ -58,6 +59,7 @@
   }
 
   .blog .button_link {
+    height: 56px;
     font-size: 12px;
     line-height: 16px;
   }
@@ -68,7 +70,9 @@
   }
 
   .blog__results {
-    height: 80px;
+    height: 56px;
+    width: 180px;
+    font-size: 12px;
   }
 
 }

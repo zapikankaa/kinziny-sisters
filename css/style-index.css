@@ -149,6 +149,7 @@
 .courses__button_mob {
   width: 180px;
   height: 56px;
+  font-size: 12px;
   margin: 0 auto;
   display: none;
 }
@@ -408,6 +409,10 @@
 
 
 @media (max-width: 767px) {
+
+  .button {
+    font-size: 12px;
+  }
 
   .first-screen {
     height: auto;
