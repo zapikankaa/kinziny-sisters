@@ -123,18 +123,19 @@
 }
 
 .pic2 {
-  background-image: url('../img/pic2.png');
+  background-image: url('../img/pic2.jpg');
   aspect-ratio: 0.78;
 }
 
 .pic3 {
-  background-image: url('../img/pic3.png');
+  background-image: url('../img/pic3.jpg');
   aspect-ratio: 0.93;
   width: 319px;
+  z-index: -2;
 }
 
 .pic4 {
-  background-image: url('../img/pic4.png');
+  background-image: url('../img/pic4.jpg');
   aspect-ratio: 0.93;
   width: 319px;
 }
