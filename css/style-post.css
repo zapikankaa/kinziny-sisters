@@ -1,0 +1,84 @@
+@import url('./base.css');
+
+.post {
+  position: relative;
+}
+
+.post .content {
+  padding-bottom: 61px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.post .text {
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.post .link {
+  margin-bottom: 30px;
+  display: block;
+  font-family: 'Gilroy';
+  color: #379ADD;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.post .button_link {
+  height: 80px;
+  padding: 0 25px;
+  width: fit-content;
+  margin-bottom: 15px;
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.post .dark-block {
+  padding: 53px 175px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.post .dark-block .text {
+  width: 100%;
+}
+
+.post__results {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+
+
+
+
+@media (max-width: 767px) {
+  .post .content {
+    padding-bottom: 35px;
+  }
+
+  .post .text {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .post .link {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .post .button_link {
+    height: 56px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .post .dark-block {
+    padding: 25px 35px;
+    margin-bottom: 15px;
+  }
+
+}
