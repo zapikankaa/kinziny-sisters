@@ -58,7 +58,7 @@
   flex-wrap: wrap;
 }
 
-.tags .tag {
+.tags__list .tag {
   cursor: pointer;
   width: fit-content;
   padding: 0 10px;
@@ -232,7 +232,7 @@
     margin-bottom: 8px;
   }
 
-  .tags .tag {
+  .tags__list .tag {
     padding: 0 5px;
     margin-right: 5px;
     margin-bottom: 4px;
@@ -274,9 +274,14 @@
     text-align: center;
   }
 
-  .post-info__top .text {
+  .post-info__top .text:not(.tag) {
     text-align: center;
     width: 70%;
+    margin-bottom: 5px;
+  }
+
+  .post .tags__list {
+    justify-content: center;
   }
 
   .post-info__bottom {
